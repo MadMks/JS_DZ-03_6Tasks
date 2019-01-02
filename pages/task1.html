@@ -21,7 +21,7 @@
                         <label for="inputName">
                             Введите Ваше имя (не может содержать цифру):
                         </label>
-                        <input type="text" onchange="checkName()"
+                        <input type="text" onkeypress="checkName(event)"
                             id="inputName"
                             class="form-control"
                             placeholder="Имя">
