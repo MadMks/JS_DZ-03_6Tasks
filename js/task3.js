@@ -7,12 +7,6 @@ function moveBall(event) {
         left: event.clientX - (ball.clientWidth / 2),
         top: event.clientY - (ball.clientHeight / 2)
     }
-    // var fieldCoords = field.getBoundingClientRect();
-
-    console.log("" + ball.clientWidth);
-
-    console.log("event.clientX " + event.clientX);
-    console.log("event.clientY " + event.clientY);
 
     // Проверка на выход за границы поля
     if (ballCoords.left < field.clientLeft) {
