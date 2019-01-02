@@ -7,12 +7,33 @@ function moveBall(event) {
         left: event.clientX - (ball.clientWidth / 2),
         top: event.clientY - (ball.clientHeight / 2)
     }
-
+    // var fieldCoords = field.getBoundingClientRect();
 
     console.log("" + ball.clientWidth);
 
     console.log("event.clientX " + event.clientX);
     console.log("event.clientY " + event.clientY);
+
+    // Проверка на выход за границы поля
+    if (ballCoords.left < field.clientLeft) {
+        ballCoords.left = 0;
+    }
+    
+    if (ballCoords.top < field.clientTop) {
+        ballCoords.top = 0;
+    }
+    
+    if (
+        (ballCoords.left + ball.clientWidth)
+        > field.clientWidth) {
+        ballCoords.left = field.clientWidth - ball.clientWidth;
+    }
+
+    if (
+        (ballCoords.top + ball.clientHeight)
+        > field.clientHeight) {
+        ballCoords.top = field.clientHeight - ball.clientHeight;
+    }
 
     
     ball.style.left = ballCoords.left + 'px';
