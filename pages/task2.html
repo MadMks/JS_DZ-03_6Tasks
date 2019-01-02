@@ -4,10 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/task2.css">
+
     <title>2) Модальное окно</title>
 </head>
 <body>
     
+    <div class="container">
+        <div class="row">
+
+            <div class="main-center">
+                <button class="btn btn-success" onclick="showPopup()">Открыть</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+    <div class=" popup text-center">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <p>Lorem ipsum dolor</p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="hidePopup()">Закрыть</button>
+            </div>
+
+        </div>
+    </div>
 
     <script src="../js/task2.js"></script>
 
