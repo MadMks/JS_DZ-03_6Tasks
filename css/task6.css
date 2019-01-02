@@ -1,0 +1,16 @@
+.btn1{
+    margin-top: 55px;
+}
+
+.btn2{
+    margin-top: 15px;
+}
+
+.main-tooltip {
+    position: fixed;
+    padding: 6px 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    text-align: center;
+    background: #ffffff;
+}
